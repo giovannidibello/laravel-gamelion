@@ -6,3 +6,63 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+// General
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+// HEADER
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #0f2c57;
+}
+
+.logo img {
+    width: 100px;
+}
+
+// Layouts App 
+
+.navbar {
+    background-color: #0f2c57;
+}
+
+.nav-link {
+    color: #f85e1e;
+}
+
+// Pulsanti 
+
+.btn-custom {
+    background-color: #0f2c57;
+    border-color: #0f2c57;
+    color: #fff;
+}
+
+.btn-custom:hover {
+    background-color: #0c2345;
+    border-color: #0c2345;
+    color: #f95f1e;
+}
+
+.btn-outline-custom {
+    color: #f95f1e;
+    border: 1px solid #f95f1e;
+    background-color: transparent;
+}
+
+.btn-outline-custom:hover {
+    background-color: #f95f1e;
+    color: #fff;
+}
+
+// Form
+
+.border-search {
+    border-color: #0f2c57;
+}
