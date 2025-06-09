@@ -16,9 +16,9 @@ class DatabaseSeeder extends Seeder
     {
         // utilizzo il seeder per la tabella Games e Platforms
         $this->call([
-            GamesTableSeeder::class,
-            PlatformsTableSeeder::class,
-            GenresTableSeeder::class
+            // GamesTableSeeder::class,
+            // PlatformsTableSeeder::class,
+            // GenresTableSeeder::class
         ]);
     }
 }
