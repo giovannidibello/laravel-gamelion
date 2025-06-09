@@ -12,8 +12,7 @@ class GameController extends Controller
     {
 
         // prendo tutti i giochi dal db
-        $games = Game::with("type")->get();
-
+        $games = Game::all();
 
         return response()->json(
             [
