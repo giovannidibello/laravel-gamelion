@@ -8,16 +8,23 @@ use Illuminate\Http\Request;
 
 class GameController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
 
         // prendo tutti i giochi dal db
-        $games = Game::all();
+        $query = Game::query()->with("platforms", "genres");
+
+        // se è presente la ricerca, filtro i dati
+        if ($request->has('search')) {
+            $search = $request->input('search');
+
+            $query->where('title', 'like', '%' . $search . '%');
+        }
 
         return response()->json(
             [
                 "success" => true,
-                "data" => $games
+                "data" => $query->get()
             ]
         );
     }
