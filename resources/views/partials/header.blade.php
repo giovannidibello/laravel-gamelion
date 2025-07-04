@@ -7,15 +7,13 @@
     <title>Header</title>
 </head>
 <body>
-    {{-- <header>       
-            <div class="logo"><a href="{{ route('game.index') }}"><img src="{{ Vite::asset('resources/img/gamelion-logo.png') }}" alt="Gamelion Logo" /></a></div>         
-    </header>  --}}
+   
     <nav class="navbar navbar-expand-md navbar-light shadow-sm">
             <div class="container">
+                {{-- navbar logo --}}
                 <a class="navbar-brand d-flex align-items-center" href="{{ url('/game') }}">
                     <div class="logo"><img src="{{ Vite::asset('resources/img/gamelion-logo.png') }}" alt="Gamelion Logo" /></div>  
-                    </div>
-                    {{-- config('app.name', 'Laravel') --}}
+                    </div>                    
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -25,9 +23,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                    
 
-                    <!-- Right Side Of Navbar -->
+                    <!-- right side navbar -->
                     <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
+                        <!-- authentication links -->
                         @guest
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>

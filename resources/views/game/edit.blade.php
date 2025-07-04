@@ -15,7 +15,7 @@
     <input type="text" name="title" id="title" value="{{ $game->title }}" required>   
 </div>
 
-{{-- platforms --}}
+{{-- checkbox piattaforme --}}
 <div class="form-control mb-2">
     <label class="mb-2">Piattaforme</label>
     <div class="d-flex flex-wrap gap-3">
@@ -31,7 +31,7 @@
     </div>
 </div>
 
-{{-- genres --}}
+{{-- checkbox generi --}}
 <div class="form-control mb-2">
     <label class="mb-2">Generi</label>
     <div class="d-flex flex-wrap gap-3">
@@ -47,6 +47,7 @@
     </div>
 </div>
 
+{{-- campi informazioni gioco --}}
 <div class="form-control mb-2 d-flex flex-column">
     <label for="release_date">Data di pubblicazione</label>
     <input type="date" name="release_date" id="release_date" value="{{ $game->release_date }}" required>    

@@ -8,6 +8,7 @@
 <div class="container">
 
     <div class="d-flex justify-content-center pb-3 gap-3">
+      {{-- pulsanti modifica e elimina gioco --}}
         <a  class="btn btn-outline-warning" href="{{route("game.edit", $game)}}">Modifica</a>
         <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
              Elimina
@@ -19,6 +20,7 @@
         <img src="{{ asset ("storage/" . $game->cover_image)}}" alt="cover" class="img-fluid" style="max-width: 300px; height: auto;">   
         @endif
 
+        {{-- visualizzazione del gioco selezionato --}}
         <div>
             <div class="mb-2 border rounded p-2 bg-light">
             @if (count($game->platforms) > 0)
